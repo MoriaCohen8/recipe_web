@@ -8,6 +8,13 @@ const DButils = require("./routes/utils/DButils");
 var cors = require('cors')
 
 var app = express();
+const corsConfig = {
+  origin: "https://recipe-web-front.onrender.com",
+  credentials: true
+};
+app.use(cors(corsConfig));
+app.options("*", cors(corsConfig));
+
 app.use(logger("dev")); //logger
 app.use(express.json()); // parse application/json
 app.use(
@@ -46,13 +53,6 @@ app.get("/", (req, res) => {
 // app.use(cors());
 // app.options("*", cors());
 
-const corsConfig = {
-  origin: "https://recipe-web-front.onrender.com",
-  credentials: true
-};
-
-app.use(cors(corsConfig));
-app.options("*", cors(corsConfig));
 
 var port = process.env.PORT || "3000"; //local=3000 remote=80
 //#endregion
