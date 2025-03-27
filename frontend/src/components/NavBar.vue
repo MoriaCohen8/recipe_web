@@ -1,7 +1,7 @@
 <template>
     <VueScrollFixedNavbar>
     <b-navbar toggleable="lg"  class="nav-bar"> 
-      <img src="..\assets\llogo.png" width="4%" height="90%">   
+      <img src="@/assets/llogo.png" width="4%" height="90%">   
       <router-link tag="b-navbar-brand" :to="{ name: 'main' }">    
       </router-link>
       <!-- Home -->
