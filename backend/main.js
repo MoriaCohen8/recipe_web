@@ -47,7 +47,7 @@ app.get("/", (req, res) => {
 // app.options("*", cors());
 
 const corsConfig = {
-  origin: true,
+  origin: "https://recipe-web-front.onrender.com",
   credentials: true
 };
 
