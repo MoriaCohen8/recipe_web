@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <br><div id="welcome" justify="center"><center><img src="..\assets\welcome2.png" width ="50%" height = "0%" /></center></div>
+    <br><div id="welcome" justify="center"><center><img src="@/assets/welcome2.png" width ="50%" height = "0%" /></center></div>
     <b-row>
       <b-col></b-col> <b-col></b-col>
       <b-col cols="5" class="RandomRecipesCol">
