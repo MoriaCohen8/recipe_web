@@ -128,7 +128,8 @@
         try {
           // console.log("chack")
           const user_id = await this.axios.get(
-            this.$root.store.server_domain + "/users/userid"
+            this.$root.store.server_domain + "/users/userid",
+            { withCredentials: true }
           );
 
           await this.axios.post(
@@ -146,7 +147,8 @@
             vegan: this.form.checked_vegan & 1,
             vegetarian: this.form.checked_vegetarian & 1,
             extendedIngredients: this.display_ingredients            
-          }
+          },
+          { withCredentials: true }
           );
           // console.log(response)
   
