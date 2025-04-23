@@ -32,6 +32,7 @@ app.use(
     // cookie: {
     //   httpOnly: false,
     // }
+    proxy: true,
     cookie: {
       httpOnly: true,
       secure: true, // חובה ב-HTTPS
