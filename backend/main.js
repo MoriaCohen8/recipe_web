@@ -9,6 +9,10 @@ var cors = require('cors')
 
 var app = express();
 app.set("trust proxy", 1);
+app.use((req, res, next) => {
+  req.connection.proxySecure = true;
+  next();
+});
 const corsConfig = {
   origin: "https://recipe-web-front.onrender.com",
   credentials: true
