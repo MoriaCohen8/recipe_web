@@ -24,8 +24,13 @@ app.use(
     secret: "template", // the encryption key
     duration: 24 * 60 * 60 * 1000, // expired after 20 sec
     activeDuration: 1000 * 60 * 5, // if expiresIn < activeDuration,
+    // cookie: {
+    //   httpOnly: false,
+    // }
     cookie: {
-      httpOnly: false,
+      httpOnly: true,
+      secure: true, // חובה ב-HTTPS
+      sameSite: "none", // ← הכי קריטי!
     }
     //the session will be extended by activeDuration milliseconds
   })
