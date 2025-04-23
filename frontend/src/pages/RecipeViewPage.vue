@@ -105,7 +105,8 @@ methods: {
         this.$root.store.server_domain + "/users/addtofavorites",
         {
           recipe_id: this.recipe_id
-        }
+        },
+        { withCredentials: true }
       );
       window.location.reload();
 
