@@ -119,7 +119,8 @@
             {
               username: this.form.username,
               password: this.form.password
-            }
+            },
+            { withCredentials: true }
           );
           // console.log(response);
           // this.$root.loggedIn = true;
