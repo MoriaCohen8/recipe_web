@@ -38,7 +38,8 @@ app.use(
       secure: true, // חובה ב-HTTPS
       sameSite: "none", // ← הכי קריטי!
       domain: "onrender.com"
-    }
+    },
+    proxySecure: true
     //the session will be extended by activeDuration milliseconds
   })
 );
