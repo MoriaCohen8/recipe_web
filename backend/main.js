@@ -36,6 +36,7 @@ app.use(
       httpOnly: true,
       secure: true, // חובה ב-HTTPS
       sameSite: "none", // ← הכי קריטי!
+      domain: "onrender.com"
     }
     //the session will be extended by activeDuration milliseconds
   })
