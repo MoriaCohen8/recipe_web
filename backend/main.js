@@ -8,6 +8,7 @@ const DButils = require("./routes/utils/DButils");
 var cors = require('cors')
 
 var app = express();
+app.set("trust proxy", 1);
 const corsConfig = {
   origin: "https://recipe-web-front.onrender.com",
   credentials: true
