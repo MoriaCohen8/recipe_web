@@ -147,6 +147,7 @@ router.get('/getfamilyrecipes', async (req,res,next) => {
  */
 router.get("/getThreeLast", async (req, res, next) => { 
   try {
+    console.log("getThreeLast function");
     try{
       console.log("session in getThreeLast:", req.session);
       let user_id = req.session.user_id;
