@@ -91,7 +91,8 @@ router.post("/Login", async (req, res, next) => {
 
     // יצירת סשן
     req.session.user_id = user.user_id;
-    req.session.setDuration(24 * 60 * 60 * 1000); // הארכת תוקף הסשן
+    req.session.authenticated = true;
+    // req.session.setDuration(24 * 60 * 60 * 1000); // הארכת תוקף הסשן
 
     console.log("✅ Session created:", req.session); // לבדיקה
 
