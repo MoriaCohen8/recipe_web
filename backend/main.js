@@ -38,8 +38,8 @@ app.use(
       secure: true, // חובה ב-HTTPS
       sameSite: "none", // ← הכי קריטי!
       
-    },
-    proxySecure: true
+    }
+    //proxySecure: true
     //the session will be extended by activeDuration milliseconds
   })
 );
