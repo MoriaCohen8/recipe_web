@@ -3,7 +3,10 @@ require("dotenv").config();
 var express = require("express");
 var path = require("path");
 var logger = require("morgan");
-const session = require("client-sessions");
+// const session = require("client-sessions");
+const session = require("express-session");
+const cookieParser = require("cookie-parser");
+
 const DButils = require("./routes/utils/DButils");
 var cors = require('cors')
 
@@ -32,6 +35,8 @@ app.use((req, res, next) => {
 
 app.use(logger("dev")); //logger
 app.use(express.json()); // parse application/json
+
+app.use(cookieParser());
 app.use(
   session({
     cookieName: "session", // the cookie key name
