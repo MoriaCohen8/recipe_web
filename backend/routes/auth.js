@@ -71,6 +71,7 @@ router.post("/Register", async (req, res, next) => {
 // });
 router.post("/Login", async (req, res, next) => {
   try {
+    console.log("login function");
     // בדיקה שהמשתמש קיים
     const users = await DButils.execQuery("SELECT username FROM users");
     if (!users.find((x) => x.username === req.body.username)) {
