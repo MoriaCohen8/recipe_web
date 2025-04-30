@@ -91,6 +91,8 @@ router.post("/Login", async (req, res, next) => {
     }
 
     // יצירת סשן
+    console.log("user.user_id after login:", user.user_id);
+    console.log("user.username after login:", user.username);
     req.session.user_id = user.user_id;
     console.log("session after login:", req.session);
     req.session.authenticated = true;
