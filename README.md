@@ -1,7 +1,6 @@
-markdown
-# 🍲 Fair Food
+# 🍲 Grandma's Recipes 
 
-A full-stack web application for discovering, saving, and managing personal and family recipes.
+A full-stack web application for discovering, saving, and managing personal recipes.
 
 🌐 Live Website: [recipe-web-front.onrender.com](https://recipe-web-front.onrender.com/#/)
 
@@ -13,11 +12,8 @@ A full-stack web application for discovering, saving, and managing personal and 
 
 - Search recipes using an external API (Spoonacular)
 - View detailed recipe instructions and ingredients
-- Create and save personal and family recipes
+- Create and save personal recipes
 - Track progress while cooking
-- Plan meals using a custom interface
-
-The project was built as part of an academic web development course and follows a **full-stack architecture** with a strong focus on usability, modularity, and design.
 
 ---
 
@@ -28,7 +24,6 @@ The project was built as part of an academic web development course and follows 
 | Frontend    | Vue.js, BootstrapVue, Axios, Vue Router           |
 | Backend     | Node.js, Express                                  |
 | Database    | MySQL (hosted via Railway)                        |
-| Authentication | cookie-session with secure cross-origin setup |
 | External API| [Spoonacular Food API](https://spoonacular.com/) |
 | Deployment  | Render (Frontend & Backend), Railway (Database)  |
 
@@ -50,31 +45,29 @@ The project was built as part of an academic web development course and follows 
 - Personal dashboard includes:
   - Favorite recipes
   - User-created recipes
-  - Family recipes
 
 ### ✍️ Recipe Creation
 - Modal-based form to create and submit new recipes
 - Recipes are saved to the database and displayed in the user’s dashboard
 
-### 🍽️ Meal Planner (Bonus Feature)
-- Add recipes to an upcoming meal plan
-- Visual progress bar for preparation stages
-- Supports reordering and removing planned recipes
-- Data persists across sessions while logged in
-
 ---
 
 ## 🖼️ Screenshots & Demo
+- 📷 Welcome Page with random recipes and login
+<img src="./src/assets/welcomepage.PNG">
 
-We recommend adding the following:
+- 📷 Register Page
+<img src="./src/assets/registerpage.PNG">
 
 - 📷 Home page with random and recently viewed recipes
-- 📷 Search page with filters and results
-- 📷 Full recipe page
-- 📷 Create recipe modal
-- 📽️ Optional: short screen recording or GIF showing flow from search → view → save
+<img src="./frontend/src/assets/home page.PNG">
 
-Add images to a `media/` folder and embed like this:
+- 📷 Search page with filters and results
+<img src="./src/assets/searchpage.PNG">
+
+- 📷 Full recipe page
+<img src="./src/assets/expandrecipe.PNG">
+
 
 ```md
 ![Home Page](media/homepage.png)
