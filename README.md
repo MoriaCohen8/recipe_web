@@ -60,7 +60,7 @@ A full-stack web application for discovering, saving, and managing personal reci
 <img src="frontend/src/assets/registerpage.PNG">
 
 - 📷 Home page with random and recently viewed recipes
-<img src="frontend/src/assets/home page.PNG">
+<img src="frontend/src/assets/homepage.PNG">
 
 - 📷 Search page with filters and results
 <img src="frontend/src/assets/searchpage.PNG">
