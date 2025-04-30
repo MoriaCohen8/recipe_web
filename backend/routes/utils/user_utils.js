@@ -11,9 +11,9 @@ async function markAsFavorite(user_id, recipe_id){
             `select * from favoriterecipes where user_id='${user_id}' AND recipe_id='${recipe_id}'`
         )
     );
-    if(recipe_fav.length==0){
-        await DButils.execQuery(`insert into favoriterecipes values ('${user_id}','${recipe_id}')`);
-    }
+    // if(recipe_fav.length==0){
+    //     await DButils.execQuery(`insert into favoriterecipes values ('${user_id}','${recipe_id}')`);
+    // }
 }
 
 /**
