@@ -54,19 +54,19 @@ A full-stack web application for discovering, saving, and managing personal reci
 
 ## 🖼️ Screenshots & Demo
 - 📷 Welcome Page with random recipes and login
-<img src="./src/assets/welcomepage.PNG">
+<img src="frontend/src/assets/welcomepage.PNG">
 
 - 📷 Register Page
-<img src="./src/assets/registerpage.PNG">
+<img src="frontend/src/assets/registerpage.PNG">
 
 - 📷 Home page with random and recently viewed recipes
-<img src="./frontend/src/assets/home page.PNG">
+<img src="frontend/src/assets/home page.PNG">
 
 - 📷 Search page with filters and results
-<img src="./src/assets/searchpage.PNG">
+<img src="frontend/src/assets/searchpage.PNG">
 
 - 📷 Full recipe page
-<img src="./src/assets/expandrecipe.PNG">
+<img src="frontend/src/assets/expandrecipe.PNG">
 
 
 ```md
