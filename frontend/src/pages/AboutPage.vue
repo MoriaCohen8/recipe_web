@@ -8,7 +8,7 @@
       <h1 class="big-title"><b>About</b></h1><p>
       Hello! I glad you came to our site! hope you enjoy in our website!!!
       </p><br/>
-      <br/>
+      
       <h4 class="title">
         Fair Food:
 
@@ -26,7 +26,7 @@
       <br/>
 
       <h4 class="title">Contact us</h4>
-      <p><b>Shalev Shpolyansky: maimon.9999@gmail.com</b> </p><br/>
+      <p><b>Shalev Shpolyansky: maimon.9999@gmail.com</b> </p>
       <p><b>Moria Cohen: moriach8@gmail.com</b> </p><br/><br/>
   </b>
   </div>
