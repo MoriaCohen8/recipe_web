@@ -1,3 +1,0 @@
-# server side
-
-Shalev Shpolyansky
