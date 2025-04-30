@@ -121,7 +121,4 @@ npm run serve
 ## 📬 Contact
 
 For questions, feel free to contact us via GitHub Issues or email.
-
-```
-
 ---
