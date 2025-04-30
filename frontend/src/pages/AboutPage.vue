@@ -26,7 +26,8 @@
       <br/>
 
       <h4 class="title">Contact us</h4>
-      <p><b>maimon.9999@gmail.com</b> </p><br/><br/>
+      <p><b>Shalev Shpolyansky: maimon.9999@gmail.com</b> </p><br/>
+      <p><b>Moria Cohen: moriach8@gmail.com</b> </p><br/><br/>
   </b>
   </div>
 </template>
