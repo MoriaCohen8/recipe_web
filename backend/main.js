@@ -4,8 +4,17 @@ var express = require("express");
 var path = require("path");
 var logger = require("morgan");
 // const session = require("client-sessions");
-const session = require("express-session");
-const cookieParser = require("cookie-parser");
+// const session = require("express-session");
+// const cookieParser = require("cookie-parser");
+const cookieSession = require("cookie-session");
+app.set("trust proxy", 1); // ← חובה ב-Render
+app.use(cookieSession({
+  name: 'session',
+  secret: 'template', // אפשר גם process.env.COOKIE_SECRET
+  maxAge: 24 * 60 * 60 * 1000, // 24 שעות
+  sameSite: 'none',
+  secure: true,
+}));
 
 const DButils = require("./routes/utils/DButils");
 var cors = require('cors')
@@ -36,7 +45,7 @@ app.use((req, res, next) => {
 app.use(logger("dev")); //logger
 app.use(express.json()); // parse application/json
 
-app.use(cookieParser());
+// app.use(cookieParser());
 app.use(
   session({
     cookieName: "session", // the cookie key name
