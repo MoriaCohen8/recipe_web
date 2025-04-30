@@ -35,8 +35,8 @@
             ><b class="menu">Favorites</b></router-link>     
           <router-link tag="b-dropdown-item" to="/myrecipes"
             ><b class="menu">My Recipes</b></router-link>
-          <router-link tag="b-dropdown-item" to="/myfamilyrecipes"
-            ><b class="menu">My Family's Recipes</b></router-link>
+          <!-- <router-link tag="b-dropdown-item" to="/myfamilyrecipes" -->
+          <!--   ><b class="menu">My Family's Recipes</b></router-link> -->
         </b-nav-item-dropdown>
   
       </b-navbar-nav>
