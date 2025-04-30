@@ -74,8 +74,8 @@ A full-stack web application for discovering, saving, and managing personal reci
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/recipe-project.git
-cd recipe-project
+git clone https://github.com/MoriaCohen8/recipe_web.git
+cd recipe_web
 ```
 
 ### 2. Install Dependencies
@@ -115,20 +115,6 @@ npm start
 cd ../client
 npm run serve
 ```
-
----
-
-## 👥 Team
-
-- **Moria Cohen** — [LinkedIn](#) | [GitHub](#)  
-- *Teammate Name* — [LinkedIn](#) | [GitHub](#) *(Replace with actual links)*
-
----
-
-## 📄 Project Background
-
-This app was built as a final project for a university-level course in modern web development environments.  
-It simulates a real-world product development process including requirement analysis (PRD), backend API design, frontend architecture, and UX considerations.
 
 ---
 
