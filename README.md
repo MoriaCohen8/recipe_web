@@ -68,11 +68,6 @@ A full-stack web application for discovering, saving, and managing personal reci
 - 📷 Full recipe page
 <img src="frontend/src/assets/expandrecipe.PNG">
 
-
-```md
-![Home Page](media/homepage.png)
-```
-
 ---
 
 ## 🚀 Getting Started Locally
