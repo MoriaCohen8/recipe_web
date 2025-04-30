@@ -7,20 +7,20 @@ var logger = require("morgan");
 // const session = require("express-session");
 // const cookieParser = require("cookie-parser");
 const cookieSession = require("cookie-session");
-app.set("trust proxy", 1); // ← חובה ב-Render
-app.use(cookieSession({
-  name: 'session',
-  secret: 'template', // אפשר גם process.env.COOKIE_SECRET
-  maxAge: 24 * 60 * 60 * 1000, // 24 שעות
-  sameSite: 'none',
-  secure: true,
-}));
+
 
 const DButils = require("./routes/utils/DButils");
 var cors = require('cors')
 
 var app = express();
 app.set("trust proxy", 1);
+app.use(cookieSession({
+  name: 'session',
+  secret: 'template',
+  maxAge: 24 * 60 * 60 * 1000,
+  sameSite: 'none',
+  secure: true,
+}));
 app.use((req, res, next) => {
   req.connection.proxySecure = true;
   next();
