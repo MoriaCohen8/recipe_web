@@ -51,29 +51,60 @@ export default {
     this.updateRecipes();
   },
   methods: {
+    // async updateRecipes() {
+    //   try {
+    //     this.no_recipe_search = false;
+    //     const response = await this.axios.get(
+    //     this.$root.store.server_domain + this.route_name
+    //     );
+    //     if (this.route_name.startsWith('/recipes/search')) {
+          
+    //       this.route_name='/recipes/search'
+    //     }
+    //     if(response.data.length === 0) {
+    //       this.no_recipe = true;
+    //     }
+    //     if(response.data == "No matching search results were found") {
+    //       this.no_recipe_search = true;
+    //     }
+    //     else{
+    //       const recipes = response.data;
+    //       this.recipes = [];
+    //       this.recipes.push(...recipes);
+    //     }    
+    //   } catch (error) {
+    //     console.log(error);
+    //   }
+    // }
+    
     async updateRecipes() {
       try {
         this.no_recipe_search = false;
         const response = await this.axios.get(
-        this.$root.store.server_domain + this.route_name
+          this.$root.store.server_domain + this.route_name
         );
+    
         if (this.route_name.startsWith('/recipes/search')) {
-          
-          this.route_name='/recipes/search'
+          this.route_name = '/recipes/search';
         }
-        if(response.data.length === 0) {
+    
+        if (response.data.length === 0) {
           this.no_recipe = true;
         }
-        if(response.data == "No matching search results were found") {
+    
+        if (response.data === "No matching search results were found") {
           this.no_recipe_search = true;
-        }
-        else{
+        } else {
           const recipes = response.data;
           this.recipes = [];
           this.recipes.push(...recipes);
-        }    
+        }
+    
+        this.$emit("loaded"); 
+    
       } catch (error) {
         console.log(error);
+        this.$emit("loaded");  
       }
     },
     async updateRandomRecipes() {
