@@ -30,6 +30,11 @@ export default {
     RecipePreviewList,
     LogIn
   },
+  data() {
+    return {
+      isLoading: true  
+    };
+  },
    methods: {
     new_random_recipes(){
       // this.$children.updateRandomRecipes()
