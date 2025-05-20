@@ -3,10 +3,30 @@
     <br><div id="welcome" justify="center"><center><img src="@/assets/welcome2.png" width ="50%" height = "0%" /></center></div>
     <b-row>
       <b-col></b-col> <b-col></b-col>
+      <!-- <b-col cols="5" class="RandomRecipesCol"> -->
+      <!--   <RecipePreviewList route_name="/recipes/random" title="Explore this recipes" class="RandomRecipes center" /> -->
+      <!--   <b-button tag="button" pill @click="new_random_recipes" class="buttonwelc"> Click for new 3 recipes!</b-button> -->
+      <!-- </b-col> -->
+
       <b-col cols="5" class="RandomRecipesCol">
-        <RecipePreviewList route_name="/recipes/random" title="Explore this recipes" class="RandomRecipes center" />
-        <b-button tag="button" pill @click="new_random_recipes" class="buttonwelc"> Click for new 3 recipes!</b-button>
-      </b-col>
+      <div v-if="isLoading" class="loader-container">
+        <b-spinner variant="warning" label="Loading..." class="my-3" />
+        <p>This may take a few seconds...</p>
+      </div>
+    
+      <RecipePreviewList
+        v-else
+        route_name="/recipes/random"
+        title="Explore this recipes"
+        class="RandomRecipes center"
+        @loaded="isLoading = false"
+      />
+    
+      <b-button tag="button" pill @click="new_random_recipes" class="buttonwelc">
+        Click for new 3 recipes!
+      </b-button>
+    </b-col>
+      
       <b-col></b-col>
       <b-col cols="4">
         <RecipePreviewList v-if="$root.store.username" route_name="/users/getThreeLast" title="Last watched recipes" class="LastViewedRecipes center" ></RecipePreviewList>
@@ -45,7 +65,15 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss" scoped
+
+.loader-container {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 18px;
+  color: #cfa343;
+}
+
 
 .container {
   border-radius: 27px;
